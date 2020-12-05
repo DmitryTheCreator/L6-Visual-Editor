@@ -1,0 +1,9 @@
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\bin\Debug\L6 Visual Editor.exe.config
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\bin\Debug\L6 Visual Editor.exe
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\bin\Debug\L6 Visual Editor.pdb
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6 Visual Editor.csprojAssemblyReference.cache
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6_Visual_Editor.Form1.resources
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6_Visual_Editor.Properties.Resources.resources
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6 Visual Editor.csproj.GenerateResource.cache
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6 Visual Editor.exe
+C:\Users\ПК\OneDrive\Документы\ООП\Лабы\L6 Visual Editor\L6 Visual Editor\obj\Debug\L6 Visual Editor.pdb
