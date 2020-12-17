@@ -31,31 +31,31 @@
             this.panel = new System.Windows.Forms.Panel();
             this.lblColor = new System.Windows.Forms.Label();
             this.pbColor = new System.Windows.Forms.PictureBox();
-            this.pbBorder = new System.Windows.Forms.PictureBox();
-            this.lblBorder = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
             this.cmbxShape = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbSelection = new System.Windows.Forms.PictureBox();
+            this.colorDialog3 = new System.Windows.Forms.ColorDialog();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBorder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSelection)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
             // 
-            this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel.BackColor = System.Drawing.Color.White;
+            this.panel.BackColor = System.Drawing.Color.Silver;
             this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel.Location = new System.Drawing.Point(12, 49);
+            this.panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1090, 535);
+            this.panel.Size = new System.Drawing.Size(1114, 54);
             this.panel.TabIndex = 0;
-            this.panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // lblColor
             // 
             this.lblColor.AutoSize = true;
+            this.lblColor.BackColor = System.Drawing.Color.Silver;
             this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblColor.ForeColor = System.Drawing.Color.Black;
             this.lblColor.Location = new System.Drawing.Point(198, 11);
@@ -66,7 +66,7 @@
             // 
             // pbColor
             // 
-            this.pbColor.BackColor = System.Drawing.Color.Salmon;
+            this.pbColor.BackColor = System.Drawing.Color.SandyBrown;
             this.pbColor.Location = new System.Drawing.Point(340, 13);
             this.pbColor.Name = "pbColor";
             this.pbColor.Size = new System.Drawing.Size(30, 30);
@@ -74,29 +74,11 @@
             this.pbColor.TabStop = false;
             this.pbColor.Click += new System.EventHandler(this.pbColor_Click);
             // 
-            // pbBorder
-            // 
-            this.pbBorder.BackColor = System.Drawing.Color.Black;
-            this.pbBorder.Location = new System.Drawing.Point(522, 13);
-            this.pbBorder.Name = "pbBorder";
-            this.pbBorder.Size = new System.Drawing.Size(30, 30);
-            this.pbBorder.TabIndex = 7;
-            this.pbBorder.TabStop = false;
-            this.pbBorder.Click += new System.EventHandler(this.pbBorder_Click);
-            // 
-            // lblBorder
-            // 
-            this.lblBorder.AutoSize = true;
-            this.lblBorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBorder.Location = new System.Drawing.Point(393, 11);
-            this.lblBorder.Name = "lblBorder";
-            this.lblBorder.Size = new System.Drawing.Size(123, 25);
-            this.lblBorder.TabIndex = 6;
-            this.lblBorder.Text = "Цвет рамки";
-            // 
             // cmbxShape
             // 
+            this.cmbxShape.BackColor = System.Drawing.Color.White;
             this.cmbxShape.DropDownWidth = 108;
+            this.cmbxShape.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cmbxShape.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cmbxShape.FormattingEnabled = true;
             this.cmbxShape.Items.AddRange(new object[] {
@@ -110,23 +92,69 @@
             this.cmbxShape.Text = "Фигура";
             this.cmbxShape.SelectedIndexChanged += new System.EventHandler(this.cmbxShape_SelectedIndexChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Silver;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(389, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Цвет выделения";
+            // 
+            // pbSelection
+            // 
+            this.pbSelection.BackColor = System.Drawing.Color.MediumPurple;
+            this.pbSelection.Location = new System.Drawing.Point(562, 13);
+            this.pbSelection.Name = "pbSelection";
+            this.pbSelection.Size = new System.Drawing.Size(30, 30);
+            this.pbSelection.TabIndex = 10;
+            this.pbSelection.TabStop = false;
+            this.pbSelection.Click += new System.EventHandler(this.pbSelection_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(622, 8);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(94, 35);
+            this.btnClear.TabIndex = 11;
+            this.btnClear.Text = "Очистить";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(731, 8);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(94, 35);
+            this.btnRemove.TabIndex = 12;
+            this.btnRemove.Text = "Удалить";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1114, 596);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.pbSelection);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbxShape);
-            this.Controls.Add(this.pbBorder);
-            this.Controls.Add(this.lblBorder);
             this.Controls.Add(this.pbColor);
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "L6 Visual Editor";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBorder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSelection)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,12 +164,14 @@
 
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Label lblColor;
-        private System.Windows.Forms.PictureBox pbBorder;
-        private System.Windows.Forms.Label lblBorder;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ColorDialog colorDialog2;
         private System.Windows.Forms.PictureBox pbColor;
         private System.Windows.Forms.ComboBox cmbxShape;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pbSelection;
+        private System.Windows.Forms.ColorDialog colorDialog3;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnRemove;
     }
 }
 
